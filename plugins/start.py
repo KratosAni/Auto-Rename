@@ -427,7 +427,7 @@ async def start(client, message: Message):
 
 async def show_start_message(client, message: Message):
     """Show the start message with buttons"""
-    m = await message.reply_text("Wᴇᴡ...Hᴏᴡ ᴀʀᴇ ʏᴏᴜ ᴅᴜᴅᴇ \nᴡᴀɪᴛ ᴀ ᴍᴏᴍᴇɴᴛ. . .")
+    m = await message.reply_text("Hᴏᴡ ᴀʀᴇ ʏᴏᴜ\nᴡᴀɪᴛ ᴀ ᴍᴏᴍᴇɴᴛ. . .")
     await asyncio.sleep(0.4)
     await m.edit_text("🎊")
     await asyncio.sleep(0.5)
@@ -439,7 +439,7 @@ async def show_start_message(client, message: Message):
     await asyncio.sleep(0.4)
     await m.delete()
 
-    await message.reply_sticker("CAACAgUAAxkBAAEOcZBoHtzt2LPLp2H6yTblKDPdT9oroQACrRUAAmSm2FeGMk8-cGYtcDYE")
+    await message.reply_text("...")
 
     buttons = InlineKeyboardMarkup([
         [
