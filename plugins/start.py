@@ -435,11 +435,11 @@ async def show_start_message(client, message: Message):
     await asyncio.sleep(0.5)
     await message.reply_chat_action(ChatAction.CHOOSE_STICKER)
     await asyncio.sleep(3)
-    await m.edit_text("Iᴀᴍ sᴛᴀʀᴛɪɴɢ...!!")
+    await m.edit_text("sᴛᴀʀᴛɪɴɢ...!!")
     await asyncio.sleep(0.4)
     await m.delete()
 
-    await message.reply_sticker("")
+    await message.reply_sticker("CAACAgUAAxkBAAEOcZBoHtzt2LPLp2H6yTblKDPdT9oroQACrRUAAmSm2FeGMk8-cGYtcDYE")
 
     buttons = InlineKeyboardMarkup([
         [
